@@ -6,6 +6,7 @@ import LeftNav from '../pages/Shared/LeftNav/LeftNav';
 import RightNav from '../pages/Shared/RightNav/RightNav';
 import Category from '../pages/Home/Category/Category';
 import { Outlet } from 'react-router-dom';
+import NavigationBar from '../pages/Shared/NavigationBar/NavigationBar';
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
             <Header>
                 <Category></Category>
             </Header>
+            <NavigationBar></NavigationBar>
             <Container>
                 <Row>
                     <Col lg={3}>
