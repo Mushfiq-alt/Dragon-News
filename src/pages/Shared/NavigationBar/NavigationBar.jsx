@@ -8,8 +8,14 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
 
-
+    const { user, logOut } = useContext(AuthContext);
     const [categories, setCategories] = useState([]);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+    }
 
     useEffect(() => {
         fetch("http://localhost:5000/categories") // Replace with your server endpoint for fetching categories
@@ -18,7 +24,7 @@ const NavigationBar = () => {
             .catch((error) => console.log(error));
     }, []);
 
-    const { user } = useContext(AuthContext);
+    
     return (
         <Container>
             <Navbar collapseOnSelect expand="lg" className="">
@@ -36,7 +42,7 @@ const NavigationBar = () => {
                             {user && <Nav.Link href="#deets"><FaUserCircle style={{ fontSize: '1.5rem' }}></FaUserCircle></Nav.Link>}
                             
                             {user ?
-                                <Button variant="secondary">LogOut</Button> :
+                                <Button onClick={handleLogOut} variant="secondary">LogOut</Button> :
                                 <Link to="/login">
                                     <Button variant="secondary">Login</Button>
                                 </Link>
