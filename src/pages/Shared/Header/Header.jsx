@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../../assets/logo.png";
 import moment from "moment";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
+import { FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
     const [categories, setCategories] = useState([]);
@@ -15,10 +17,12 @@ const Header = () => {
             .catch((error) => console.log(error));
     }, []);
 
+    const {user} = useContext(AuthContext);
+
     return (
         <Container>
             <div className="text-center">
-                <img src={logo} alt="" />
+                <Link to={'./category/0'}><img src={logo} alt="" /></Link>
                 <p className="">
                     <small>Journalism Without Fear or Favour</small>
                 </p>
@@ -47,9 +51,14 @@ const Header = () => {
                             ))}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Profile</Nav.Link>
+                            {user && <Nav.Link href="#deets"><FaUserCircle style={{fontSize: '1.5rem'}}></FaUserCircle></Nav.Link>}
                             <Nav.Link eventKey={2} href="#memes">
-                                <Button variant="secondary">Login</Button>
+                                { user ?
+                                    <Button variant="secondary">LogOut</Button>:
+                                    <Link to="/login">
+                                        <Button variant="secondary">Login</Button>
+                                    </Link>
+                                }
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
