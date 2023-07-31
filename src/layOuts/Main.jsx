@@ -4,19 +4,22 @@ import Header from "../pages/Shared/Header/Header";
 import { Col, Row } from "react-bootstrap";
 import LeftNav from '../pages/Shared/LeftNav/LeftNav';
 import RightNav from '../pages/Shared/RightNav/RightNav';
+import Category from '../pages/Home/Category/Category';
 
 
 const Main = () => {
     return (
         <div>
-            <Header></Header>
+            <Header>
+                <Category></Category>
+            </Header>
             <Container>
                 <Row>
                     <Col lg={3}>
                         <LeftNav></LeftNav>
                     </Col>
                     <Col lg={6}>
-                        <h2>Main Content Coming...</h2>
+                        <Category></Category>
                     </Col>
                     <Col lg={3}>
                         <RightNav></RightNav>
