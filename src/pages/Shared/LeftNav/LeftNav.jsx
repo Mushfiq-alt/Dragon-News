@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Sports from "../SportBar/Sports";
 
 const LeftNav = () => {
 
@@ -23,6 +24,7 @@ const LeftNav = () => {
                         <Link to={`/category/${category.id}`} className="text-decoration-none text-light-emphasis">{category.name}</Link>
                     </p>)
                 }
+                <Sports></Sports>
             </div>
         </div>
     );
