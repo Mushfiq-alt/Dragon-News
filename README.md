@@ -6,7 +6,15 @@ Dragon News - Your go-to source for the latest and most relevant news.
 
 ## Description
 
-Dragon News is a newspaper website built with React.js, React Bootstrap, and React Router, 
+Dragon News is a newspaper website built with React.js, React Bootstrap, and React Router. 
+
+Key features include:
+
+Authentication: Users are required to register and log in to access the complete news content. Firebase Authentication is used to securely manage user credentials and enable smooth login processes.
+
+Authorization: Only authenticated users can access private routes, such as full news articles. Unauthorized users are redirected to the login page to ensure content privacy.
+
+Private Routes: Dragon News implements private routes using React Router to control access to sensitive content, ensuring that only logged-in users can view full articles and other premium features.
 
 ## Demo
 
