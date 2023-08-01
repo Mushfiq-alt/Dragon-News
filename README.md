@@ -1,3 +1,5 @@
+
+
 # Dragon News
 
 Dragon News - Your go-to source for the latest and most relevant news.
@@ -8,7 +10,7 @@ Dragon News is a newspaper website built with React.js, React Bootstrap, and Rea
 
 ## Demo
 
-Visit our website: [https://the-news-dragon-8c2e7.web.app/](https://the-news-dragon-8c2e7.web.app/)
+Visit the website: [https://the-news-dragon-8c2e7.web.app/](https://the-news-dragon-8c2e7.web.app/)
 
 ## Technologies Used
 
@@ -47,8 +49,10 @@ We express our gratitude to all the contributors and open-source projects that m
 
 ## Screenshots
 
-![Screenshot 1](https://example.com/screenshot1.png)
-![Screenshot 2](https://example.com/screenshot2.png)
+![Screenshot 1](https://i.ibb.co/YXqqTrz/sc1.png)
+![Screenshot 2](https://i.ibb.co/MpPP8xV/sc2.png)
+![Screenshot 3](https://i.ibb.co/tznQF4d/sc3.png)
+![Screenshot 4](https://i.ibb.co/5v8Yv5Q/sc4.png)
 
 ## Contributors
 
