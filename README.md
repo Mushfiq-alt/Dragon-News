@@ -51,9 +51,6 @@ Report any bugs or suggest new features on our [issue tracker](https://github.co
 
 For inquiries or feedback, you can reach at mushfiquzzaman.chowdhury@gmail.com
 
-## Acknowledgments
-
-We express our gratitude to all the contributors and open-source projects that made Dragon News possible.
 
 ## Screenshots
 
