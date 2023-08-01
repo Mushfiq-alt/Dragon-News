@@ -38,9 +38,6 @@ To run Dragon News locally, follow these steps:
 5. Deploy the server-side to Vercel: `vercel`
 
 
-## How to Contribute
-
-We welcome contributions to Dragon News! To contribute, follow the guidelines in [CONTRIBUTING.md](https://github.com/Mushfiq-alt/Dragon-News-Client/blob/main/CONTRIBUTING.md).
 
 ## Issues
 
