@@ -18,7 +18,7 @@ const NavigationBar = () => {
     }
 
     useEffect(() => {
-        fetch("http://localhost:5000/categories") // Replace with your server endpoint for fetching categories
+        fetch("https://the-news-dragon-server-mushfiq-alt.vercel.app/categories") // Replace with your server endpoint for fetching categories
             .then((res) => res.json())
             .then((data) => setCategories(data))
             .catch((error) => console.log(error));
